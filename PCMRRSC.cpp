@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int x; // Number that holds the value of the users choice for FPS rating
+int x(); // Number that holds the value of the users choice for FPS rating
 
 x = 0;
 
@@ -12,10 +12,12 @@ int main()
 {
   fps();
   
-  cin << x;
+  cin >> x;
+  
+  return 0;
 }
 
 void fps()
 {
-  cout << "1: May be capped to 30 FPS" << endl << "May be capped to 60 FPS"" << endl;
+  cout << "1: May be capped to 30 FPS" << endl << "May be capped to 60 FPS" << endl;
 }
