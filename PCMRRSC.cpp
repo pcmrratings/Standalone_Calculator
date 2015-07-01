@@ -13,7 +13,7 @@ int main()
   cin << x;
 }
 
-fps()
+void fps()
 {
-  cout << "1: May be capped to 30 FPS << endl << "May be capped to 60 FPS"" << endl;
+  cout << "1: May be capped to 30 FPS" << endl << "May be capped to 60 FPS"" << endl;
 }
