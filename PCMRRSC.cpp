@@ -2,9 +2,7 @@
 
 using namespace std;
 
-int x(); // Number that holds the value of the users choice for FPS rating
-
-x = 0;
+int x(0); // Number that holds the value of the users choice for FPS rating
 
 void fps(); // The function to determine the score the game is rated on Frames Per Second
 
