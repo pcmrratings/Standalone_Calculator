@@ -17,5 +17,5 @@ int main()
 
 void fps()
 {
-  cout << "1: May be capped to 30 FPS" << endl << "May be capped to 60 FPS" << endl;
+  cout << "1: May be capped to 30 FPS" << endl << "2: May be capped to 60 FPS" << "60 FPS capped" << "60 FPS capped, potentially limitless" << endl;
 }
