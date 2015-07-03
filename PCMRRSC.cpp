@@ -27,22 +27,23 @@ int scoreControls(0); // Holds the value of the user's choice for Controls ratin
 int scoreTotal(0); // Holds the value of the total score of the game
 
 //SCORE CALCULATORS//
-void fps(); // The function to determine the score the game is rated on Frames Per Second
+
+void fps();
 
 void total(); // The function to determine the total score the game is rated dependent on users input
 
 void rating() // Displays ratings so far and total
 {
-    cout << "|FPS:         |      " << scoreFPS << endl;
-    cout << "|Resolution:  |      " << scoreResolution << endl;
-    cout << "|Optimization:|      " << scoreOptimization << endl;
-    cout << "|Mod Support  |      " << scoreModSupport << endl;
-    cout << "|Servers:     |      " << scoreServers << endl;
-    cout << "|DLC:         |      " << scoreDLC << endl;
-    cout << "|Glitches:    |      " << scoreGlitches << endl;
-    cout << "|Settings:    |      " << scoreSettings << endl;
-    cout << "|Controls:    |      " << scoreControls << endl;
-    cout << "|Total:       |      " << scoreTotal << endl;
+    cout << "|FPS:         |" << scoreFPS << "|" << endl;
+    cout << "|Resolution:  |" << scoreResolution << "|" << endl;
+    cout << "|Optimization:|" << scoreOptimization << "|" << endl;
+    cout << "|Mod Support  |" << scoreModSupport << "|" << endl;
+    cout << "|Servers:     |" << scoreServers << "|" << endl;
+    cout << "|DLC:         |" << scoreDLC << "|" << endl;
+    cout << "|Glitches:    |" << scoreGlitches << "|" << endl;
+    cout << "|Settings:    |" << scoreSettings << "|" << endl;
+    cout << "|Controls:    |" << scoreControls << "|" << endl;
+    cout << "|Total:       |" << scoreTotal << "|" << endl;
 }
 
 int reactionFPS(); // Determines whether users choice was correct and reacts accordingly
@@ -58,16 +59,37 @@ int main()
   return 0;
 }
 
+#include <iostream>
+using namespace std;
+
 void fps()
 {
   cout << "1: May be capped to 30 FPS" << endl << "2: May be capped to 60 FPS" << endl << "3: 60 FPS capped" << endl << "4: 60 FPS capped, potentially limitless" << endl << "5: limitless" << endl;
 
-  cin >> scoreFPS;
+    cin >> scoreFPS;
 
-  cout << "You chose " << scoreFPS << endl << "Is this correct? y/n" << endl;
+        system("reset");
 
-  cin >> yn;
+            cout << "You chose " << scoreFPS << endl << "Is this correct? y/n" << endl;
 
+                cin >> yn;
+
+}
+
+void resolution()
+{
+}
+
+void optimization()
+{
+}
+
+void modSupport()
+{
+}
+
+void total()
+{
 }
 
 int reactionFPS()
