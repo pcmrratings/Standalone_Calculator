@@ -29,15 +29,15 @@ void total(); // The function to determine the total score the game is rated dep
 void rating() // Displays ratings so far and total
 {
     cout << "|FPS:         |" << scoreFPS << "|" << endl;
-        cout << "|Resolution:  |" << scoreResolution << "|" << endl;
-            cout << "|Optimization:|" << scoreOptimization << "|" << endl;
-                cout << "|Mod Support  |" << scoreModSupport << "|" << endl;
-                    cout << "|Servers:     |" << scoreServers << "|" << endl;
-                        cout << "|DLC:         |" << scoreDLC << "|" << endl;
-                            cout << "|Glitches:    |" << scoreGlitches << "|" << endl;
-                                cout << "|Settings:    |" << scoreSettings << "|" << endl;
-                                    cout << "|Controls:    |" << scoreControls << "|" << endl;
-                                        cout << "|Total:       |" << scoreTotal << "|" << endl;
+    cout << "|Resolution:  |" << scoreResolution << "|" << endl;
+    cout << "|Optimization:|" << scoreOptimization << "|" << endl;
+    cout << "|Mod Support  |" << scoreModSupport << "|" << endl;
+    cout << "|Servers:     |" << scoreServers << "|" << endl;
+    cout << "|DLC:         |" << scoreDLC << "|" << endl;
+    cout << "|Glitches:    |" << scoreGlitches << "|" << endl;
+    cout << "|Settings:    |" << scoreSettings << "|" << endl;
+    cout << "|Controls:    |" << scoreControls << "|" << endl;
+    cout << "|Total:       |" << scoreTotal << "|" << endl;
 }
 
 int reactionFPS(); // Determines whether users choice was correct and reacts accordingly
@@ -45,26 +45,9 @@ int reactionFPS(); // Determines whether users choice was correct and reacts acc
 int main()
 {
     fps();
-
-        reactionFPS();
-
-            rating();
+    
+          rating();
                 
                 resolution();
-}
-
-int reactionFPS()
-{
-    if(yn=='y')
-    {
-        return 0;
-    }
-
-    else if (yn=='n')
-    {
-        system("reset");
-
-        fps();
-    }
 }
 
