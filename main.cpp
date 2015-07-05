@@ -31,5 +31,35 @@ int main()
                     rating();
                     
                         optimization();
+                        
+                            rating();
+                                
+                                modSupport();
+                                
+                                    rating();
+                                
+                                        servers();
+                                        
+                                            rating();
+                                        
+                                                dlc();
+                                                
+                                                    rating();
+                                                        
+                                                        glitches();
+                                                        
+                                                            rating();
+                                                                
+                                                                settings();
+                                                                
+                                                                    rating();
+                                                                    
+                                                                        controls();
+                                                                        
+                                                                            rating();
+                                    
+                                        
+                                
+                            
 }
 
