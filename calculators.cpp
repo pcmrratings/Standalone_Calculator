@@ -29,9 +29,12 @@ void fps()
                 cout << "You chose " << scoreFPS << endl << "Is this correct? y/n" << endl;
 
                     cin >> yn;
+                    
+                        reaction;
                         
-                        scoreFPS = scoreFPS * 5;
-
+                            scoreFPS = scoreFPS * 8;
+                            
+                            scoreTotal = scoreTotal + scoreFPS;
 }
 
 void resolution()
@@ -56,6 +59,10 @@ void resolution()
                     cin >> yn;
                     
                         reaction;
+                        
+                            scoreResolution = scoreResolution * 7;
+                            
+                                scoreTotal = scoreTotal + scoreResolution;
 }
 
 void optimization()
@@ -80,6 +87,10 @@ void optimization()
                 cin >> yn;
                 
                     reaction();
+                    
+                        scoreOptimization = scoreOptimization * 9;
+                        
+                            scoreTotal = scoreTotal + scoreOptimization;
 }
 
 void modSupport()
@@ -100,7 +111,14 @@ void modSupport()
             cout << "You chose " << scoreModSupport <<
             endl << "Is that correct?" <<
             endl;
-        
+            
+            cin >> yn;
+            
+                reaction();
+                
+                    scoreModSupport = scoreModSupport * 3;
+                    
+                        scoreTotal = scoreTotal + scoreModSupport;
 }
 
 void servers()
@@ -122,9 +140,13 @@ void servers()
     endl << "Is that correct?" <<
     endl;
     
-    cin >> yn;
+        cin >> yn;
     
-    reaction;
+            reaction;
+            
+                scoreServers = scoreServers * 5;
+                
+                    scoreTotal = scoreTotal + scoreServers;
 }
 
 void dlc()
@@ -140,15 +162,20 @@ void dlc()
     
     cin >> scoreDLC;
     
+    
         system("clear");
     
     cout << "You chose " << scoreDLC << 
     endl << "Is that correct?" <<
     endl;
     
-    cin >> yn;
+        cin >> yn;
     
-    reaction();
+            reaction();
+            
+                scoreDLC = scoreDLC * 4;
+                
+                    scoreTotal = scoreTotal + scoreDLC;
 }
 
 void glitches()
@@ -167,6 +194,14 @@ void glitches()
     cout << "You chose " << scoreGlitches << 
     endl << "Is that correct?" <<
     endl;
+    
+        cin >> yn;
+        
+            reaction;
+            
+                scoreGlitches = scoreGlitches * 6;
+                
+                    scoreTotal = scoreTotal + scoreGlitches;
  }
 
 void settings()
@@ -181,12 +216,20 @@ void settings()
     endl;
     
     cin >> scoreSettings;
-    
+        
     system("clear");
     
-    cout << "You chose " << scoreSettings <<
-    endl << "Is that correct?" <<
-    endl;
+        cout << "You chose " << scoreSettings <<
+        endl << "Is that correct?" <<
+        endl;
+        
+            cin >> yn;
+        
+                reaction;
+                
+                    scoreSettings = scoreSettings * 2;
+                    
+                        scoreTotal = scoreTotal + scoreSettings;
 }
 
 void controls()
@@ -206,14 +249,11 @@ void controls()
     endl << "Is this correct" <<
     endl;
     
-    cin >> yn;
+        cin >> yn;
     
-    reaction;
-}
-
-void total()
-{
-    cin >> scoreTotal;
+            reaction;
+            
+                scoreTotal = scoreTotal + scoreControls;
 }
 
 int restartFunction()

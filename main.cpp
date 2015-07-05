@@ -57,9 +57,5 @@ int main()
                                                                         controls();
                                                                         
                                                                             rating();
-                                    
-                                        
-                                
-                            
 }
 

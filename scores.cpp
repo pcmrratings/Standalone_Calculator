@@ -20,3 +20,4 @@ int scoreSettings(0); // Holds the value of the user's choice for Settings ratin
 int scoreControls(0); // Holds the value of the user's choice for Controls rating
 
 int scoreTotal(0); // Holds the value of the total score of the game
+
