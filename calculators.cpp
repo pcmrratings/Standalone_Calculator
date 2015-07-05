@@ -3,6 +3,12 @@
 
 using namespace std;
 
+int curFunc;
+
+int reaction();
+
+int restartFunction();
+
 char yn;
 
 void fps()
@@ -40,6 +46,8 @@ void resolution()
         cin >> scoreResolution;
     
             system("clear");
+            
+                
     
     
 }
@@ -55,14 +63,15 @@ void optimization()
     
     cin >> scoreOptimization;
     
-        system("clear")
+        system("clear");
         
             cout << "You chose" << scoreOptimization << 
-            endl << "Is that correct?"
+            endl << "Is that correct?" << 
+            endl;
             
                 cin >> yn;
                 
-                    reaction
+                    reaction();
 }
 
 void modSupport()
@@ -79,11 +88,11 @@ void modSupport()
 
 void servers()
 {
-    cout << "1" <<
-    endl << "2" <<
-    endl << "3" <<
-    endl << "4" <<
-    endl << "5" <<
+    cout << "1: Possibly weak, unreliable servers" <<
+    endl << "2: Possibly weak servers, but occasionally reliable" <<
+    endl << "3: Possibly some server issues a high volume, but no options available" <<
+    endl << "4: Acceptable servers with dedicated or custom servers optional" <<
+    endl << "5: Strong servers with dedicated or custom servers optional" <<
     endl;
     
     cin >> scoreServers;
@@ -91,11 +100,11 @@ void servers()
 
 void dlc()
 {
-    cout << "1" <<
-    endl << "2" <<
-    endl << "3" <<
-    endl << "4" <<
-    endl << "5" <<
+    cout << "1: Possible Day 1 DLC, affects entire game balance" <<
+    endl << "2: Possible Day 1 DLC[" <<
+    endl << "3: Possible Day 1 DLC, does not affect game balance online" <<
+    endl << "4: No Day 1 DLC, or DLC is purely cosmetic" <<
+    endl << "5: No Day 1 DLC, or DLC is free" <<
         endl;
     
     cin >> scoreDLC;
@@ -103,11 +112,11 @@ void dlc()
 
 void glitches()
 {
-    cout << "1" <<
-    endl << "2" <<
-    endl << "3" <<
-    endl << "4" <<
-    endl << "5" <<
+    cout << "1: Possible excess of glitches, likely game breaking" <<
+    endl << "2: Possible excess of glitches, but not game breaking" <<
+    endl << "3: Some glitches, but usually not game game breaking" <<
+    endl << "4: Few glitches, but rarely do they affect enjoyment" <<
+    endl << "5: Nearly none, or to a limited and rare amount" <<
     endl;
     
     cin >> scoreGlitches;
@@ -118,27 +127,24 @@ void total()
     cin >> scoreTotal;
 }
 
-int curFunc(0);
-
 int restartFunction()
 {
-    if (curFunc == 1)
+    if(curFunc=1)
     {
         fps();
     }
     
-    if (curFunc == 2)
+    else if(curFunc=2)
     {
         resolution();
     }
     
-    if (curFunc == 3)
+    else if(curFunc=3)
     {
         optimization();
     }
     
 }
-
 
 int reaction() // Determines whether users choice was correct and reacts accordingly
 {

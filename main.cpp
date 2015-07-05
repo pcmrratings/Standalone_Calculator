@@ -4,28 +4,6 @@
 
 using namespace std;
 
-//SCORE CALCULATORS//
-
-void fps(); // Function that determines the score of FPS
-
-void resolution(); // Function that determines the score of Resolution
-
-void optimization();
-
-void modSupport();
-
-void servers();
-
-void dlc();
-
-void glitches();
-
-void settings();
-
-void controls();
-
-void total(); // The function to determine the total score the game is rated dependent on users input
-
 void rating() // Displays ratings so far and total
 {
     cout << "|FPS:         |" << scoreFPS << "|" << endl;
@@ -49,5 +27,9 @@ int main()
           rating();
                 
                 resolution();
+                
+                    rating();
+                    
+                        optimization();
 }
 
